@@ -274,9 +274,74 @@ section{padding:46px 22px;}
 }
 .sticky-cta.show{transform:translate(-50%,0);}
 .sticky-cta .cta-btn{margin:0 auto;padding:14px;font-size:15px;}
+
+/* ---- PC表示（1024px以上・2026-07-20追加）----
+   スマホ表示は従来のまま。PCでは左に固定ブランドパネル＋右にLP本体の2カラム。 */
+.pc-side{display:none;}
+@media (min-width:1024px){
+  body{
+    display:flex;justify-content:center;align-items:flex-start;gap:64px;
+    background:
+      radial-gradient(1100px 700px at 28% 18%, #13222e 0%, rgba(6,10,14,0) 62%),
+      radial-gradient(900px 600px at 78% 85%, rgba(12,145,160,.10) 0%, rgba(6,10,14,0) 60%),
+      #060a0e;
+  }
+  .wrap{margin:0;}
+  .pc-side{
+    display:flex;flex-direction:column;justify-content:center;
+    position:sticky;top:0;height:100vh;width:400px;flex:0 0 400px;
+    padding:40px 8px;box-sizing:border-box;
+  }
+  .ps-logos{font-size:21px;font-weight:800;letter-spacing:.08em;color:#fff;}
+  .ps-logos .ps-x{color:var(--gold);margin:0 8px;}
+  .ps-logos .ps-nf{color:var(--primary);}
+  .ps-catch{margin-top:20px;font-size:32px;font-weight:800;line-height:1.55;}
+  .ps-catch b{color:var(--gold);}
+  .ps-period{
+    margin-top:16px;display:inline-block;align-self:flex-start;
+    background:var(--red-pale);color:#ff8d99;border:1px solid rgba(226,51,74,.4);
+    font-size:13.5px;font-weight:700;padding:6px 16px;border-radius:8px;
+  }
+  .ps-points{margin-top:18px;list-style:none;padding:0;}
+  .ps-points li{
+    position:relative;padding-left:24px;font-size:14.5px;line-height:2.0;color:var(--txt);
+  }
+  .ps-points li::before{content:"✓";position:absolute;left:0;color:var(--primary);font-weight:900;}
+  .pc-side .cta-btn{max-width:360px;margin:22px 0 0;}
+  .ps-qr{
+    margin-top:26px;display:flex;gap:16px;align-items:center;
+    background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;
+    max-width:360px;box-sizing:border-box;
+  }
+  .ps-qr img{width:108px;height:108px;border-radius:8px;background:#fff;padding:4px;box-sizing:border-box;}
+  .ps-qr p{font-size:12.5px;color:var(--muted);line-height:1.8;}
+  .ps-qr p b{color:var(--primary);}
+  .ps-note{margin-top:20px;font-size:11px;color:#65727c;max-width:360px;}
+  /* 追従CTAはLPカラム（右側）の中央に合わせる: カラム中心=50%+(400+64)/2 */
+  .sticky-cta{left:calc(50% + 232px);}
+}
 </style>
 </head>
 <body>
+
+<!-- ==== PC専用サイドパネル（幅1024px以上でのみ表示・2026-07-20追加） ==== -->
+<aside class="pc-side">
+  <div class="ps-logos">XMTRADING<span class="ps-x">×</span><span class="ps-nf">Narrow Focus</span></div>
+  <p class="ps-catch">入金額が<b>そのまま2倍</b>になる<br>8月をはじめよう</p>
+  <span class="ps-period">⏳ 2026年8月3日(月)6:00 〜 9月1日(火)5:59</span>
+  <ul class="ps-points">
+    <li>100%入金ボーナス（上限$500・約8万円）</li>
+    <li>新規の方も、既存口座の方も対象</li>
+    <li>Narrow 3大特典つき（受け取りは公式LINE）</li>
+  </ul>
+  <a href="#" class="cta-btn js-xm">タイアップ経由で口座開設する<small>▶ 最短3分・口座維持費0円</small></a>
+  <div class="ps-qr">
+    <img src="qr-line.png" alt="Narrow公式LINE 友だち追加QRコード" width="108" height="108" loading="lazy">
+    <p><b>3大特典の受け取りは公式LINE</b><br>スマホのカメラでQRコードを<br>読み取ってください</p>
+  </div>
+  <p class="ps-note">※本ページはアフィリエイト広告（XMTradingパートナープログラム）を含みます。FX取引は元本を保証するものではありません。</p>
+</aside>
+
 <div class="wrap">
 
   <!-- PR表記（景表法・ステマ規制対応） -->
