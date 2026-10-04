@@ -229,9 +229,11 @@ section{padding:46px 22px;}
 .code-box{margin:14px 0 6px;background:#000;border:1.5px dashed var(--gold);border-radius:12px;padding:14px;text-align:center;}
 .code-box .lbl{font-size:11.5px;color:var(--gold);font-weight:800;letter-spacing:.1em;}
 .code-box .code{
-  font-size:24px;font-weight:900;color:#fff;letter-spacing:.12em;margin:4px 0 10px;
-  font-family:Consolas,Monaco,monospace;word-break:break-all;
+  font-size:30px;font-weight:900;color:#fff;letter-spacing:.14em;margin:4px 0 10px;
+  /* スマホの等幅フォントだとWが小文字に見えるため、大文字がはっきり出る太字サンセリフにする（2026-10-05） */
+  font-family:"Arial Black","Helvetica Neue",Arial,Roboto,sans-serif;text-transform:uppercase;word-break:break-all;
 }
+.js-code-inline{font-family:"Arial Black","Helvetica Neue",Arial,Roboto,sans-serif;font-size:1.08em;letter-spacing:.06em;text-transform:uppercase;}
 .copy-btn{
   background:var(--gold);color:#3a2800;border:none;font-size:13.5px;font-weight:800;
   padding:10px 26px;border-radius:999px;cursor:pointer;font-family:inherit;
