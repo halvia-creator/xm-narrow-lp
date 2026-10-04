@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【Narrow経由の口座限定・10/30まで】XM 秋の特別ボーナス 入金100%＋50%｜Narrow Focus</title>
+<meta name="description" content="2026年10月5日〜10月30日の期間限定。XMTrading秋の特別ボーナス：入金100%ボーナス（最大USD500）＋取引量USD20,000,000達成で50%ボーナス（最大USD4,000）。常設の入金ボーナスと合わせて最大USD15,000。対象はNarrow Focus経由（リンク／パートナーコード）で開設したXM口座。Narrow経由の既存口座はそのまま対象。Narrow Focus限定の3大特典付き。">
+<meta name="robots" content="index,follow">
+<script>
+/* ============================================================
+   ▼▼▼ ここだけ書き換えればOK（3行）▼▼▼
+   ============================================================ */
+const CONFIG = {
+  XM_LINK:      "https://clicks.affstrack.com/c?c=1265139&l=ja&p=1", // XM開設リンク（本番・2026-07-20ユーザー支給）
+  PARTNER_CODE: "GRYTP",                         // パートナーコード（本番・2026-07-20ユーザー支給）
+  LINE_URL:     "https://lin.ee/Qqk01yC",        // Narrow公式LINE（確認済み）
+};
+/* ============================================================ */
+</script>
+<style>
+:root{
+  --bg:#0d141b;            /* XMブラック寄りのダークネイビー */
+  --bg2:#111a22;
+  --card:#151f29;
+  --card2:#1a2632;
+  --line:#263644;
+  --txt:#edf3f7;
+  --muted:#93a7b4;
+  --primary:#17b1c3;       /* Narrowティール（ダーク背景用に明度アップ） */
+  --primary-deep:#0C91A0;  /* Narrowブランド原色 */
+  --primary-pale:rgba(12,145,160,.14);
+  --red:#e2334a;           /* XMレッド（行動・警告） */
+  --red-deep:#b71f33;
+  --red-pale:rgba(226,51,74,.12);
+  --gold:#f2c14e;          /* ボーナス数字用 */
+  --gold-deep:#c9971b;
+  --gold-pale:rgba(242,193,78,.12);
+  --autumn:#f08a3c;        /* 秋の特別ボーナス用アクセント（紅葉オレンジ） */
+  --autumn-pale:rgba(240,138,60,.13);
+  --green:#06C755;
+  --shadow:0 8px 28px rgba(0,0,0,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic Medium","Yu Gothic",Meiryo,sans-serif;
+  background:#060a0e;
+  color:var(--txt);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:480px;margin:0 auto;background:var(--bg);min-height:100vh;box-shadow:0 0 50px rgba(0,0,0,.7);position:relative;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+
+/* ---- PRバー ---- */
+.pr-bar{background:#000;color:#8fa0ab;font-size:11px;text-align:center;padding:5px 12px;letter-spacing:.05em;}
+.pr-bar b{color:#d5dee4;border:1px solid #4a5a66;padding:0 5px;border-radius:3px;margin-right:6px;font-weight:600;}
+
+/* ---- ヒーロー ---- */
+.hero{position:relative;text-align:center;padding:0 0 34px;background:linear-gradient(180deg,#000 0%,var(--bg) 55%);}
+.hero-visual{position:relative;}
+.hero-visual img{width:100%;}
+.hero-visual::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:60px;
+  background:linear-gradient(180deg,transparent,var(--bg) 92%);
+}
+.hero-body{padding:6px 22px 0;}
+.badge{
+  display:inline-flex;align-items:center;gap:6px;
+  border:1px solid rgba(240,138,60,.5);background:var(--autumn-pale);
+  color:var(--autumn);font-weight:800;font-size:12px;letter-spacing:.06em;
+  padding:6px 16px;border-radius:999px;
+}
+.hero h1{margin-top:14px;font-size:25px;font-weight:800;line-height:1.5;letter-spacing:.01em;}
+.hero h1 .accent{color:var(--gold);}
+.hero h1 .big{font-size:31px;}
+.hero .lead{margin-top:12px;font-size:14px;color:var(--muted);text-align:left;}
+.hero .lead b{color:var(--txt);}
+.hero .period{
+  margin-top:14px;display:inline-block;background:var(--red-pale);color:#ff8d99;
+  border:1px solid rgba(226,51,74,.4);
+  font-size:13px;font-weight:700;padding:6px 16px;border-radius:8px;
+}
+.target-pills{display:flex;justify-content:center;gap:8px;margin-top:14px;flex-wrap:wrap;}
+.pill{background:var(--card);border:1px solid var(--line);font-size:12px;font-weight:700;padding:5px 14px;border-radius:999px;color:var(--muted);}
+.pill.hot{border-color:var(--primary-deep);color:var(--primary);background:var(--primary-pale);}
+
+/* ---- ヒーロー下の3つの数字 ---- */
+.hero-nums{display:flex;gap:6px;margin-top:16px;}
+.hn{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 4px 9px;}
+.hn .t{font-size:10.5px;font-weight:700;color:var(--muted);line-height:1.4;}
+.hn .v{font-size:19px;font-weight:900;color:var(--gold);line-height:1.25;margin-top:3px;}
+.hn .v small{font-size:10.5px;}
+.hn .s{font-size:10px;color:var(--muted);line-height:1.4;margin-top:2px;}
+.hn.max{border-color:var(--gold-deep);background:linear-gradient(180deg,rgba(242,193,78,.04),var(--gold-pale));}
+
+/* ---- CTA ---- */
+.cta-btn{
+  display:block;width:100%;max-width:400px;margin:20px auto 0;
+  background:linear-gradient(180deg,#ff5063 0%,var(--red) 55%,var(--red-deep) 100%);
+  color:#fff;text-decoration:none;text-align:center;
+  font-size:17px;font-weight:800;letter-spacing:.03em;
+  padding:17px 16px;border-radius:12px;
+  box-shadow:0 8px 24px rgba(226,51,74,.4), inset 0 1px 0 rgba(255,255,255,.3);
+}
+.cta-btn small{display:block;font-size:12px;font-weight:600;opacity:.92;margin-top:2px;}
+.cta-btn.sub{
+  background:transparent;color:var(--primary);border:1.5px solid var(--primary-deep);
+  box-shadow:none;font-size:15px;padding:14px 16px;
+}
+.cta-btn.line{
+  background:linear-gradient(180deg,#1fd96a 0%,var(--green) 55%,#04a344 100%);
+  box-shadow:0 8px 20px rgba(6,199,85,.35), inset 0 1px 0 rgba(255,255,255,.3);
+}
+.micro{font-size:11.5px;color:var(--muted);text-align:center;margin-top:10px;}
+.micro a{color:var(--primary);}
+.micro b{color:var(--txt);}
+
+/* ---- カウントダウン ---- */
+.countdown{
+  background:linear-gradient(90deg,#150a10,#241019 50%,#150a10);
+  border-top:1px solid rgba(226,51,74,.35);border-bottom:1px solid rgba(226,51,74,.35);
+  text-align:center;padding:16px 12px 18px;
+}
+.countdown .cd-label{font-size:12.5px;font-weight:700;color:#ff8d99;letter-spacing:.15em;}
+.cd-timer{display:flex;justify-content:center;gap:6px;margin-top:8px;align-items:flex-end;}
+.cd-cell{background:#000;border:1px solid #3a1a24;border-radius:10px;min-width:62px;padding:8px 4px 6px;}
+.cd-cell .num{font-size:26px;font-weight:900;color:#fff;font-variant-numeric:tabular-nums;line-height:1;}
+.cd-cell .u{font-size:10px;color:#ff8d99;font-weight:700;margin-top:4px;display:block;}
+.cd-note{font-size:11px;color:#b9808c;margin-top:8px;}
+
+/* ---- セクション ---- */
+section{padding:46px 22px;}
+.sec-tag{text-align:center;font-size:11.5px;font-weight:800;letter-spacing:.3em;color:var(--primary);margin-bottom:8px;}
+.sec-title{text-align:center;font-size:22px;font-weight:800;line-height:1.5;margin-bottom:10px;}
+.sec-title .accent{color:var(--primary);}
+.sec-title .gold{color:var(--gold);}
+.sec-lead{text-align:center;font-size:13.5px;color:var(--muted);margin-bottom:26px;}
+
+/* ---- 悩み→解決 ---- */
+.pain-sec{background:var(--bg2);}
+.pain-list{display:flex;flex-direction:column;gap:12px;}
+.pain{
+  display:flex;gap:12px;align-items:flex-start;background:var(--card);
+  border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+}
+.pain .x{flex:0 0 auto;color:var(--red);font-weight:900;font-size:16px;padding-top:1px;}
+.pain p{font-size:13.5px;color:var(--txt);}
+.pain p b{color:#ff8d99;}
+.turn{
+  margin:22px auto 0;text-align:center;background:var(--primary-pale);border-radius:14px;
+  padding:20px 18px;border:1px solid rgba(23,177,195,.35);
+}
+.turn p{font-size:14.5px;font-weight:700;line-height:1.8;}
+.turn p .accent{color:var(--primary);}
+.turn p .gold{color:var(--gold);}
+
+/* ---- 2段階ボーナス ---- */
+.stage{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 18px;box-shadow:var(--shadow);position:relative;}
+.stage + .stage-arrow{text-align:center;color:var(--gold);font-size:13px;font-weight:800;padding:10px 0;}
+.stage-head{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.stage-no{
+  flex:0 0 auto;background:var(--gold);color:#3a2800;font-size:11.5px;font-weight:900;
+  padding:3px 10px;border-radius:6px;letter-spacing:.08em;
+}
+.stage.s2 .stage-no{background:var(--autumn);color:#3a1600;}
+.stage-head h3{font-size:16px;font-weight:800;line-height:1.45;}
+.stage-head h3 .gold{color:var(--gold);}
+.stage-head h3 .au{color:var(--autumn);}
+.stage-cond{font-size:12.5px;color:var(--muted);margin-bottom:12px;}
+.stage-cond b{color:var(--txt);}
+.calc-row{display:flex;align-items:center;justify-content:center;gap:8px;}
+.calc-box{text-align:center;border-radius:12px;padding:12px 6px;flex:1;min-width:0;}
+.calc-box .t{font-size:11.5px;font-weight:700;margin-bottom:3px;color:var(--muted);}
+.calc-box .v{font-size:19px;font-weight:900;line-height:1.2;}
+.calc-box .v small{font-size:11px;}
+.calc-box.dep{background:var(--primary-pale);border:1px solid rgba(23,177,195,.35);}
+.calc-box.dep .v{color:var(--primary);}
+.calc-box.bonus{background:var(--gold-pale);border:1px solid rgba(242,193,78,.4);}
+.calc-box.bonus .v{color:var(--gold);}
+.stage.s2 .calc-box.bonus{background:var(--autumn-pale);border-color:rgba(240,138,60,.45);}
+.stage.s2 .calc-box.bonus .v{color:var(--autumn);}
+.calc-op{font-size:20px;font-weight:900;color:var(--muted);flex:0 0 auto;}
+.calc-note{font-size:11.5px;color:var(--muted);margin-top:10px;line-height:1.7;}
+.vol-box{margin-top:12px;background:#0b1117;border:1px dashed var(--line);border-radius:12px;padding:12px 14px;}
+.vol-box .t{font-size:12.5px;font-weight:800;color:var(--autumn);margin-bottom:4px;}
+.vol-box p{font-size:12px;color:var(--muted);line-height:1.75;}
+.vol-box p b{color:var(--txt);}
+.total-card{
+  margin-top:18px;text-align:center;background:linear-gradient(180deg,rgba(242,193,78,.06),var(--gold-pale));
+  border:1.5px solid var(--gold-deep);border-radius:16px;padding:18px 14px;
+}
+.total-card .t{font-size:13px;font-weight:700;color:var(--muted);}
+.total-card .v{font-size:34px;font-weight:900;color:var(--gold);line-height:1.2;margin-top:2px;}
+.total-card .v small{font-size:15px;}
+.total-break{display:flex;flex-direction:column;gap:5px;margin-top:12px;text-align:left;}
+.total-break div{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;color:var(--muted);border-bottom:1px dashed rgba(242,193,78,.2);padding-bottom:5px;}
+.total-break div b{color:var(--txt);white-space:nowrap;}
+.total-break div.hl b{color:var(--gold);}
+.total-card .n{font-size:11px;color:var(--muted);margin-top:10px;line-height:1.7;}
+.points{display:flex;flex-direction:column;gap:12px;margin-top:24px;}
+.point{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);}
+.point .ic{
+  flex:0 0 44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  background:var(--primary-pale);font-size:20px;
+}
+.point h3{font-size:15px;font-weight:800;margin-bottom:2px;}
+.point h3 .accent{color:var(--primary);}
+.point p{font-size:13px;color:var(--muted);}
+
+/* ---- 対象口座チェック ---- */
+.check-sec{background:linear-gradient(180deg,#0f171f,#111c25);}
+.check-list{display:flex;flex-direction:column;gap:10px;}
+.chk{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+.chk .m{flex:0 0 26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;}
+.chk.ok .m{background:var(--primary-pale);color:var(--primary);border:1px solid rgba(23,177,195,.45);}
+.chk.ng .m{background:var(--red-pale);color:#ff6b78;border:1px solid rgba(226,51,74,.45);}
+.chk h4{font-size:14.5px;font-weight:800;line-height:1.5;}
+.chk p{font-size:12.5px;color:var(--muted);margin-top:2px;}
+.chk p b{color:var(--txt);}
+.code-card{
+  margin-top:22px;border:1.5px solid var(--primary-deep);border-radius:16px;padding:20px 18px;background:#0b1a20;
+  box-shadow:var(--shadow);
+}
+.code-card .ttl{text-align:center;font-size:16px;font-weight:900;line-height:1.5;margin-bottom:8px;}
+.code-card .ttl .accent{color:var(--primary);}
+.code-card p{font-size:13px;color:#d6e3ea;}
+.code-card p b{color:var(--gold);}
+.code-box{margin:14px 0 6px;background:#000;border:1.5px dashed var(--gold);border-radius:12px;padding:14px;text-align:center;}
+.code-box .lbl{font-size:11.5px;color:var(--gold);font-weight:800;letter-spacing:.1em;}
+.code-box .code{
+  font-size:24px;font-weight:900;color:#fff;letter-spacing:.12em;margin:4px 0 10px;
+  font-family:Consolas,Monaco,monospace;word-break:break-all;
+}
+.copy-btn{
+  background:var(--gold);color:#3a2800;border:none;font-size:13.5px;font-weight:800;
+  padding:10px 26px;border-radius:999px;cursor:pointer;font-family:inherit;
+}
+.copy-btn:active{transform:scale(.96);}
+.code-note{font-size:11.5px;color:var(--muted);margin-top:10px;}
+
+/* ---- ステップ（タブ） ---- */
+.tabs{display:flex;gap:6px;margin-bottom:18px;}
+.tab-btn{
+  flex:1;background:var(--card);border:1.5px solid var(--line);color:var(--muted);
+  font-size:12.5px;font-weight:800;line-height:1.4;padding:10px 4px;border-radius:10px;cursor:pointer;font-family:inherit;
+}
+.tab-btn.active{background:var(--primary-deep);border-color:var(--primary-deep);color:#fff;box-shadow:0 4px 14px rgba(12,145,160,.35);}
+.steps{display:none;flex-direction:column;}
+.steps.show{display:flex;}
+.step{display:flex;gap:14px;position:relative;padding-bottom:22px;}
+.step:last-child{padding-bottom:0;}
+.step::before{content:"";position:absolute;left:17px;top:38px;bottom:2px;width:2px;background:var(--line);}
+.step:last-child::before{display:none;}
+.step .num{
+  flex:0 0 36px;height:36px;border-radius:50%;background:linear-gradient(180deg,var(--primary),var(--primary-deep));
+  color:#fff;font-weight:900;font-size:15px;display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:1;
+}
+.step h4{font-size:15px;font-weight:800;padding-top:5px;}
+.step p{font-size:13px;color:var(--muted);margin-top:3px;}
+.step p b{color:var(--gold);}
+.step .mini-link{font-size:12.5px;color:var(--primary);}
+
+/* ---- 特典 ---- */
+.tokuten-sec{background:linear-gradient(180deg,var(--bg2),#10202a);}
+.tokuten-card{
+  background:var(--card);border:1px solid var(--line);border-left:4px solid var(--primary-deep);
+  border-radius:14px;padding:20px 18px;margin-bottom:14px;box-shadow:var(--shadow);
+}
+.tk-badge{
+  display:inline-block;background:var(--primary-deep);color:#fff;font-size:12px;font-weight:900;
+  padding:3px 14px;border-radius:6px;letter-spacing:.1em;margin-bottom:8px;
+}
+.tokuten-card h3{font-size:17px;font-weight:800;line-height:1.5;}
+.tokuten-card h3 .free{color:var(--primary);}
+.tk-list{margin-top:10px;display:flex;flex-direction:column;gap:7px;}
+.tk-list li{list-style:none;font-size:13px;color:var(--txt);position:relative;padding-left:20px;line-height:1.7;}
+.tk-list li::before{content:"✓";color:var(--primary);font-weight:900;position:absolute;left:0;top:0;}
+.tk-list li b{color:var(--gold);}
+.svc-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+.svc-card h3{font-size:14px;font-weight:800;margin-bottom:10px;color:var(--muted);}
+.line-guide{text-align:center;margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 18px;box-shadow:var(--shadow);}
+.line-guide .t{font-size:15px;font-weight:800;line-height:1.7;}
+.line-guide .t b{color:var(--green);}
+.line-guide .s{font-size:12px;color:var(--muted);margin-top:8px;}
+
+/* ---- 信頼（HAYA / Narrow Focus） ---- */
+.trust-sec{background:var(--bg2);}
+.trust-img{border-radius:14px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:18px;border:1px solid var(--line);}
+.trust-body p{font-size:13.5px;color:var(--txt);margin-bottom:10px;}
+.trust-body p b{color:var(--primary);}
+.trust-note{font-size:12px;color:var(--muted);background:var(--card);border-radius:10px;padding:12px 14px;}
+.trust-note a{color:var(--primary);}
+
+/* ---- FAQ ---- */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;}
+.faq summary{cursor:pointer;padding:15px 42px 15px 16px;font-size:14px;font-weight:700;list-style:none;position:relative;line-height:1.55;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::before{content:"Q.";color:var(--red);font-weight:900;margin-right:8px;}
+.faq summary::after{
+  content:"＋";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  color:var(--gold);font-weight:900;font-size:16px;
+}
+.faq details[open] summary::after{content:"－";}
+.faq .a{padding:0 16px 15px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px;}
+.faq .a b{color:var(--gold);}
+
+/* ---- リスク・フッター ---- */
+.risk{background:#080d12;padding:34px 22px 120px;}
+.risk h3{font-size:13px;font-weight:800;color:#7b8d99;margin-bottom:10px;}
+.risk p,.risk li{font-size:11px;color:#66788a;line-height:1.8;}
+.risk ul{padding-left:16px;margin-bottom:14px;}
+.risk .pr-note{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 12px;margin-bottom:16px;color:#8296a3;font-size:11px;}
+
+/* ---- 追従CTA ---- */
+.sticky-cta{
+  position:fixed;bottom:0;left:50%;transform:translate(-50%,110%);
+  width:100%;max-width:480px;padding:10px 14px 14px;z-index:50;
+  background:linear-gradient(180deg,transparent,rgba(6,10,14,.94) 30%);
+  transition:transform .35s ease;
+}
+.sticky-cta.show{transform:translate(-50%,0);}
+.sticky-cta .cta-btn{margin:0 auto;padding:14px;font-size:15px;}
+
+/* ---- PC表示（2026-07-20）----
+   スマホのデザインをそのままPCサイズに拡大表示する（レイアウトは一切変えない）。
+   zoomはページ全体に効くので、追従CTAやカウントダウンも含めて等倍で大きくなる。 */
+@media (min-width:1024px){
+  body{zoom:1.5;}   /* 480px → 実質720px幅 */
+}
+@media (min-width:1500px){
+  body{zoom:1.8;}   /* 480px → 実質864px幅 */
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- PR表記（景表法・ステマ規制対応） -->
+  <div class="pr-bar"><b>PR</b>本ページはアフィリエイト広告（XMTradingパートナープログラム）を含みます</div>
+
+  <!-- ============ ヒーロー ============ -->
+  <header class="hero">
+    <div class="hero-visual">
+      <img src="hero-autumn.jpg" alt="XMTrading × Narrow Focus 秋の特別ボーナス 100%＋50%" fetchpriority="high">
+    </div>
+    <div class="hero-body">
+      <span class="badge">🍂 Narrow経由の口座限定 XM秋の特別ボーナス</span>
+      <h1>入金<span class="accent">100%</span>＋<span class="accent">50%</span>ボーナス<br>最大<span class="accent big">USD4,500</span></h1>
+      <p class="lead"><b>Narrow Focus経由のXM口座</b>を対象に、期間限定の「秋の特別ボーナス」を開催中。<b>入金100%ボーナス（最大USD500）</b>に加えて、取引量がUSD20,000,000に達すると<b>50%ボーナス（最大USD4,000）</b>も受け取れます。Narrow経由で開設済みの方は<b>今の口座のまま</b>、これからの方は<b>当ページのリンクから開設</b>すれば対象です。</p>
+      <div class="hero-nums">
+        <div class="hn"><div class="t">入金ボーナス</div><div class="v">100<small>%</small></div><div class="s">最大USD500</div></div>
+        <div class="hn"><div class="t">取引量達成で</div><div class="v">50<small>%</small></div><div class="s">最大USD4,000</div></div>
+        <div class="hn max"><div class="t">常設ボーナス込み</div><div class="v"><small>最大</small>$15,000</div><div class="s">利用可能</div></div>
+      </div>
+      <div class="period">⏳ 2026年10月5日(月)15:30 〜 10月30日(金)</div>
+      <div class="target-pills">
+        <span class="pill hot">🔰 新規の方 対象</span>
+        <span class="pill hot">✅ Narrow経由の口座はそのままOK</span>
+        <span class="pill">他経由の方は追加口座で対象</span>
+      </div>
+      <a href="#" class="cta-btn js-xm">XMで口座開設して受け取る<small>▶ 最短3分・口座維持費0円</small></a>
+      <a href="#tokuten" class="cta-btn sub">Narrow 3大特典の内容を見る</a>
+      <p class="micro">※対象は<b>Narrow経由（当ページのリンク／パートナーコード）で開設したボーナス対象口座のみ</b>。他経由の口座・KIWAMI極口座は対象外です。<a href="#check">対象口座の確認はこちら</a></p>
+    </div>
+  </header>
+
+  <!-- ============ カウントダウン ============ -->
+  <div class="countdown">
+    <div class="cd-label" id="cdLabel">キャンペーン終了まで</div>
+    <div class="cd-timer" id="cdTimer">
+      <div class="cd-cell"><span class="num" id="cdD">--</span><span class="u">日</span></div>
+      <div class="cd-cell"><span class="num" id="cdH">--</span><span class="u">時間</span></div>
+      <div class="cd-cell"><span class="num" id="cdM">--</span><span class="u">分</span></div>
+      <div class="cd-cell"><span class="num" id="cdS">--</span><span class="u">秒</span></div>
+    </div>
+    <p class="cd-note">開催期間：2026/10/5(月) 15:30 〜 10/30(金)（日本時間）</p>
+  </div>
+
+  <!-- ============ 悩み→解決 ============ -->
+  <section class="pain-sec">
+    <div class="sec-tag">WHY</div>
+    <h2 class="sec-title">そのトレード、<br><span class="accent">ギャンブル</span>になっていませんか？</h2>
+    <p class="sec-lead">勝てない理由は才能ではなく、環境にあります。</p>
+    <div class="pain-list">
+      <div class="pain"><span class="x">✕</span><p>「そろそろ上がりそう」の<b>感覚エントリー</b>で、毎回ハラハラしながらチャートを見ている</p></div>
+      <div class="pain"><span class="x">✕</span><p>損切りできずに耐えて、<b>コツコツドカン</b>で資金を溶かしたことがある</p></div>
+      <div class="pain"><span class="x">✕</span><p>証拠金が薄く、<b>少しの逆行でロスカット</b>。分析が合っていても生き残れない</p></div>
+    </div>
+    <div class="turn">
+      <p>この秋、<span class="accent">環境ごと変える</span>チャンスです。<br>
+      証拠金を厚くする<span class="gold">100%＋50%ボーナス</span>と、<br>
+      判断を支える<span class="accent">Narrowの3大特典</span>をセットで。</p>
+    </div>
+  </section>
+
+  <!-- ============ 2段階ボーナス ============ -->
+  <section id="bonus">
+    <div class="sec-tag">BONUS</div>
+    <h2 class="sec-title">ボーナスは<span class="gold">2段階</span><br>まずは入金で100%</h2>
+    <p class="sec-lead">入金するだけの100%ボーナスに、<br>取引量に応じた50%ボーナスが上乗せされます。</p>
+
+    <div class="stage s1">
+      <div class="stage-head"><span class="stage-no">STEP 1</span><h3>入金で<span class="gold">100%ボーナス</span><br>（最大USD500）</h3></div>
+      <p class="stage-cond">期間中の入金に対して、<b>入金額と同額</b>のボーナスが付きます。</p>
+      <div class="calc-row">
+        <div class="calc-box dep"><div class="t">入金</div><div class="v">$500</div></div>
+        <div class="calc-op">＋</div>
+        <div class="calc-box bonus"><div class="t">ボーナス100%</div><div class="v">$500</div></div>
+        <div class="calc-op">＝</div>
+        <div class="calc-box bonus"><div class="t">証拠金</div><div class="v">$1,000</div></div>
+      </div>
+      <p class="calc-note">※USD500までの入金に100%適用。入金ボーナスは口座への入金反映時に付与されます。</p>
+    </div>
+    <div class="stage-arrow">▼ さらに取引量を達成すると</div>
+    <div class="stage s2">
+      <div class="stage-head"><span class="stage-no">STEP 2</span><h3>取引量達成で<span class="au">50%ボーナス</span><br>（最大USD4,000）</h3></div>
+      <p class="stage-cond">取引量が<b>USD20,000,000</b>に達すると、<b>50%ボーナス（最大USD4,000）</b>の対象になります。</p>
+      <div class="calc-row">
+        <div class="calc-box dep"><div class="t">入金</div><div class="v">$8,000</div></div>
+        <div class="calc-op">＋</div>
+        <div class="calc-box bonus"><div class="t">ボーナス50%</div><div class="v">$4,000</div></div>
+      </div>
+      <p class="calc-note">※50%ボーナスの上限USD4,000に届く入金額の目安はUSD8,000です。</p>
+      <div class="vol-box">
+        <div class="t">「取引量USD20,000,000」ってどのくらい？</div>
+        <p>取引量は「取引した金額（ドル換算）」の合計です。たとえば<b>USD/JPYを1ロット（10万ドル）取引すると取引量USD100,000</b>なので、<b>累計約200ロット</b>が目安になります。通貨ペアによって1ロットあたりの金額は変わります。</p>
+        <p style="margin-top:6px;">短期売買の多い方向けの上乗せ枠です。<b>STEP1の100%だけでも十分お得</b>なので、取引量のために無理な売買をする必要はありません。</p>
+      </div>
+    </div>
+
+    <div class="total-card">
+      <div class="t">常設の入金ボーナスと合わせると</div>
+      <div class="v"><small>最大</small> USD15,000<small>のボーナス</small></div>
+      <div class="total-break">
+        <div class="hl"><span>特別ボーナス 100%</span><b>最大 USD500</b></div>
+        <div class="hl"><span>特別ボーナス 50%（取引量達成）</span><b>最大 USD4,000</b></div>
+        <div><span>常設ボーナス（100%＋20%）</span><b>最大 USD10,500</b></div>
+      </div>
+      <p class="n">※XMよりNarrow会員向けに案内された「既存20%ボーナスと合わせて最大USD15,000のボーナスが利用可能」に基づく内訳です。</p>
+    </div>
+
+    <div class="points">
+      <div class="point">
+        <div class="ic">✅</div>
+        <div><h3>Narrow経由の口座なら<span class="accent">そのまま</span></h3><p>Narrow経由で開設済みのボーナス対象口座なら、追加口座なしで入金するだけ。他経由の方はコード入りの追加口座で対象になります。</p></div>
+      </div>
+      <div class="point">
+        <div class="ic">🛡️</div>
+        <div><h3>負けても粘れる<span class="accent">クッション機能</span></h3><p>自己資金がゼロになってもボーナス分だけで取引を継続できます。</p></div>
+      </div>
+      <div class="point">
+        <div class="ic">💰</div>
+        <div><h3>ボーナスで得た<span class="accent">利益は出金OK</span></h3><p>ボーナス自体は出金できませんが、ボーナスを使った取引の利益は出金できます。</p></div>
+      </div>
+    </div>
+    <a href="#" class="cta-btn js-xm" style="margin-top:26px;">今すぐボーナスを受け取る<small>▶ 期間：2026/10/5〜10/30</small></a>
+  </section>
+
+  <!-- ============ 対象口座チェック ============ -->
+  <section class="check-sec" id="check">
+    <div class="sec-tag">CHECK</div>
+    <h2 class="sec-title">対象は<br><span class="accent">Narrow経由のXM口座</span>だけ</h2>
+    <p class="sec-lead">Narrow Focus会員向けの特別条件です。<br>入金前に、ここだけ確認してください。</p>
+    <div class="check-list">
+      <div class="chk ok"><span class="m">✓</span><div><h4>Narrow経由で開設済みのXM口座</h4><p>当ページのリンク／パートナーコードで開設したボーナス対象口座なら<b>そのまま入金でOK</b>。追加口座は不要です。</p></div></div>
+      <div class="chk ok"><span class="m">✓</span><div><h4>これから口座を作る方</h4><p><b>当ページのリンクから開設</b>すれば対象です。口座タイプは<b>スタンダード口座</b>がおすすめ。ボーナス受取は「希望する」に。</p></div></div>
+      <div class="chk ng"><span class="m">✕</span><div><h4>Narrow経由ではないXM口座</h4><p>他サイト・他の紹介者経由や直接開設した口座は<b>対象外</b>です。下のパートナーコードを入れた<b>追加口座を作れば対象</b>になります。</p></div></div>
+      <div class="chk ng"><span class="m">✕</span><div><h4>KIWAMI極口座</h4><p>Narrow経由でも、極口座にはボーナスは<b>反映されません</b>。</p></div></div>
+      <div class="chk ng"><span class="m">✕</span><div><h4>ボーナス受取を「希望しない」設定の口座</h4><p>ボーナス対象外の口座には付与されません。</p></div></div>
+    </div>
+
+    <div class="code-card">
+      <div class="ttl">Narrow経由ではない<br><span class="accent">XM口座をお持ちの方へ</span></div>
+      <p>パートナーコードは<b>あとから既存口座に追加できません</b>。会員ページの「追加口座を開設する」でこのコードを入力し、<b>その追加口座へ入金</b>してください。ボーナスもNarrowの3大特典も対象になります。</p>
+      <div class="code-box">
+        <div class="lbl">PARTNER CODE ── 追加口座開設時に入力</div>
+        <div class="code js-code">-----</div>
+        <button class="copy-btn" id="copyBtn">コードをコピー</button>
+      </div>
+      <p class="code-note">※新規の方は下のボタン（Narrowのタイアップリンク）から開設すれば自動で適用されます。</p>
+    </div>
+    <a href="#" class="cta-btn js-xm" style="margin-top:22px;">タイアップリンクから口座開設する<small>▶ 新規の方はこちら（コード自動適用）</small></a>
+  </section>
+
+  <!-- ============ 受け取りステップ ============ -->
+  <section>
+    <div class="sec-tag">HOW TO</div>
+    <h2 class="sec-title">受け取りは<span class="accent">かんたん</span><br>3ステップ</h2>
+    <p class="sec-lead">あなたに当てはまる方を選んでください。</p>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="new">はじめて<br>の方</button>
+      <button class="tab-btn" data-tab="old">Narrow経由<br>の口座あり</button>
+      <button class="tab-btn" data-tab="other">他経由<br>の口座あり</button>
+    </div>
+
+    <div class="steps show" id="tab-new">
+      <div class="step">
+        <div class="num">1</div>
+        <div><h4>下のボタンからXM公式へ</h4><p>当ページの<b>タイアップリンク経由</b>で口座開設ページへ。パートナーコードは自動で適用されます。</p></div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div><h4>口座開設＋本人確認（最短3分）</h4><p>口座タイプは<b>スタンダード口座</b>がおすすめ。ボーナス受取は「希望する」を選択してください（極口座は対象外）。</p></div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div><h4>期間中に入金 → 100%ボーナス</h4><p>10/5〜10/30の期間中に入金すると、<b>入金額と同額（最大USD500）</b>のボーナスが反映。取引量がUSD20,000,000に達すると<b>50%ボーナス（最大USD4,000）</b>も対象に。</p></div>
+      </div>
+      <div class="step">
+        <div class="num">＋</div>
+        <div><h4>公式LINEで3大特典を受け取る</h4><p class="mini-link">▼ 下の「3大特典」からLINE登録で完了です。</p></div>
+      </div>
+    </div>
+
+    <div class="steps" id="tab-old">
+      <div class="step">
+        <div class="num">1</div>
+        <div><h4>XM会員ページにログイン</h4><p>Narrow経由で開設した口座なら<b>追加口座の開設は必要ありません</b>。</p></div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div><h4>Narrow経由のボーナス対象口座に期間中入金</h4><p>10/5〜10/30の間に入金すると、<b>100%ボーナス（最大USD500）</b>が反映されます。極口座には反映されません。</p></div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div><h4>取引量達成で50%ボーナス</h4><p>取引量がUSD20,000,000に達すると、<b>50%ボーナス（最大USD4,000）</b>の対象になります。</p></div>
+      </div>
+      <div class="step">
+        <div class="num">＋</div>
+        <div><h4>3大特典がまだの方は公式LINEへ</h4><p class="mini-link">▼ 下の「3大特典」からLINE登録で完了です。</p></div>
+      </div>
+    </div>
+
+    <div class="steps" id="tab-other">
+      <div class="step">
+        <div class="num">1</div>
+        <div><h4>XM会員ページで「追加口座を開設」</h4><p>他サイト経由・直接開設の口座は<b>そのままでは対象外</b>です。同じアカウントで追加口座を作ります（無料・すぐ作れます）。</p></div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div><h4>パートナーコードを入力</h4><p>開設フォームのパートナーコード欄に <b class="js-code-inline">-----</b> を入力。<b>入力し忘れると対象外</b>で、あとから追加もできません。</p></div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div><h4>その追加口座に期間中入金</h4><p>10/5〜10/30の間に<b>コードを入れた追加口座へ入金</b>すると100%ボーナス、取引量達成で50%ボーナスの対象に。</p></div>
+      </div>
+      <div class="step">
+        <div class="num">＋</div>
+        <div><h4>公式LINEで3大特典を受け取る</h4><p class="mini-link">▼ 下の「3大特典」からLINE登録で完了です。</p></div>
+      </div>
+    </div>
+
+    <a href="#" class="cta-btn js-xm" style="margin-top:26px;">XM公式サイトでボーナスを受け取る<small>▶ 期間：2026/10/5〜10/30 まで</small></a>
+  </section>
+
+  <!-- ============ 3大特典 ============ -->
+  <section class="tokuten-sec" id="tokuten">
+    <div class="sec-tag">BENEFITS</div>
+    <h2 class="sec-title">当ページ経由で開設した方限定<br><span class="accent">Narrow 3大特典</span></h2>
+    <p class="sec-lead">ボーナスは「入口」。感覚に頼らないための環境をセットで。</p>
+
+    <div class="tokuten-card">
+      <span class="tk-badge">特典 1</span>
+      <h3>Narrow MEMBER<br><span class="free">無料登録</span></h3>
+      <ul class="tk-list">
+        <li>相場分析・トレード解説などの会員限定コンテンツ</li>
+        <li>初心者がつまずくポイントを基礎から学べる</li>
+        <li>オリジナルインジケーターやレジサポ価格共有など<b>実戦ツールもまとめて使える</b></li>
+      </ul>
+    </div>
+
+    <div class="tokuten-card">
+      <span class="tk-badge">特典 2</span>
+      <h3>RSIロジック<br><span class="free">AIエントリー配信</span></h3>
+      <ul class="tk-list">
+        <li>NarrowのRSIロジックに基づく<b>エントリーポイントをAIが配信</b></li>
+        <li>「感覚エントリー」を卒業するための判断材料に</li>
+        <li>配信を見ながらロジックの考え方そのものが学べる</li>
+      </ul>
+    </div>
+
+    <div class="tokuten-card">
+      <span class="tk-badge">特典 3</span>
+      <h3>リアルタイム<span class="free">トレード配信</span></h3>
+      <ul class="tk-list">
+        <li><b>NarrowFocus認定トレーダー</b>の実際のトレードをリアルタイムで視聴</li>
+        <li>エントリー根拠・損切り・利確の判断を生で確認できる</li>
+        <li>HAYAが登場する配信も<b>不定期で開催</b>。ひとりで悩まない学習環境</li>
+      </ul>
+    </div>
+
+    <div class="svc-card">
+      <h3>＋ 特典と合わせて使える Narrow の標準サービス</h3>
+      <ul class="tk-list">
+        <li>YouTube相場分析動画／毎日の相場考察配信（LINE＆Discord）</li>
+        <li>レジサポ価格共有（毎日Discord）／先週の相場復習（通貨強弱と総括）</li>
+        <li>Narrowオリジナルインジケーター（レンジ=〇・転換点=★）※MT4推奨</li>
+        <li>Narrowライン（各銘柄に自動でレジサポ描画）※MT4のみ</li>
+        <li>雑談部屋＆初心者オープンチャット（猛者の情報共有／初心者サポート）</li>
+        <li>税理士紹介サポート／開設口座のブローカー対応サポート</li>
+      </ul>
+    </div>
+
+    <div class="line-guide">
+      <p class="t">特典の受け取りは<b>公式LINE</b>から。<br>「口座開設完了」のスクショを送るだけ。</p>
+      <a href="#" class="cta-btn line js-line" style="margin-top:16px;">公式LINEで3大特典を受け取る<small>▶ 登録無料・30秒で完了</small></a>
+      <p class="s">※当ページのリンク経由（またはパートナーコード入力）で開設した口座が対象です。</p>
+    </div>
+  </section>
+
+  <!-- ============ 信頼（HAYA / Narrow Focus） ============ -->
+  <section class="trust-sec">
+    <div class="sec-tag">ABOUT</div>
+    <h2 class="sec-title">Narrow Focus とは</h2>
+    <p class="sec-lead">「投資を、もっと楽しく。」を掲げる投資教育コミュニティ。</p>
+    <div class="trust-img"><img src="haya.jpg" alt="トレーダーHAYA - Narrow Focus" loading="lazy"></div>
+    <div class="trust-body">
+      <p><b>トレーダーHAYA</b>が率いるNarrow Focusは、YouTube相場分析・毎日の相場考察配信・リアルタイムのトレード配信を通じて、<b>判断の根拠を見せる</b>スタイルで発信を続けています。</p>
+      <p>「必ず勝てる」とは言いません。相場にリスクがあるからこそ、<b>資金管理と根拠のあるエントリー</b>を最初から身につけてほしい——それが今回のご案内の趣旨です。</p>
+      <p class="trust-note">運営: Narrow Focus（<a href="https://narrow-focus.com" target="_blank" rel="noopener">narrow-focus.com</a>）／ X: @TraderHAYA ／ 特典・サービスは投資助言ではなく情報提供です。</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq">
+    <div class="sec-tag">FAQ</div>
+    <h2 class="sec-title">よくある質問</h2>
+    <p class="sec-lead">不安はここで解消してください。</p>
+
+    <details>
+      <summary>すでにXMの口座を持っています。追加口座は必要ですか？</summary>
+      <p class="a"><b>Narrow経由（当ページのリンク／パートナーコード）で開設した口座なら追加口座は不要</b>です。そのボーナス対象口座に入金すれば対象になります（KIWAMI極口座には反映されません）。<b>Narrow経由ではない口座の場合は対象外</b>なので、パートナーコードを入れた追加口座を開設してください。</p>
+    </details>
+    <details>
+      <summary>他のサイトや紹介者経由で作ったXM口座でも対象ですか？</summary>
+      <p class="a"><b>対象外</b>です。この秋の特別ボーナスはNarrow Focus経由の口座向けの条件です。パートナーコードは既存口座にあとから追加できないため、会員ページで<b>コード <span class="js-code-inline">-----</span> を入れた追加口座</b>を作り、その口座に入金してください。</p>
+    </details>
+    <details>
+      <summary>50%ボーナスはどうすれば受け取れますか？</summary>
+      <p class="a">取引量が<b>USD20,000,000</b>に達すると、<b>50%ボーナス（最大USD4,000）</b>の対象になります。USD/JPYなら1ロット＝取引量USD100,000なので<b>累計約200ロット</b>が目安です（通貨ペアにより異なります）。取引量の集計方法・付与のタイミングなど細かな条件は、XM会員ページのキャンペーン案内をご確認ください。</p>
+    </details>
+    <details>
+      <summary>「最大USD15,000」とはどういう意味ですか？</summary>
+      <p class="a">秋の特別ボーナス（100%最大USD500＋50%最大USD4,000）と、常設の入金ボーナス（100%＋20%・最大USD10,500）を合わせると、<b>最大USD15,000</b>のボーナスが利用できるという意味です。</p>
+    </details>
+    <details>
+      <summary>ボーナスはそのまま出金できますか？</summary>
+      <p class="a">ボーナス自体の出金はできません。ただし<b>ボーナスを使った取引で得た利益は出金できます</b>。なお出金や口座間の資金移動をすると、その割合に応じてボーナスも差し引かれます（例：残高の50%を出金するとボーナスも50%消滅）。</p>
+    </details>
+    <details>
+      <summary>対象の口座タイプは？</summary>
+      <p class="a"><b>ボーナス対象口座（スタンダード口座・マイクロ口座など）</b>が対象で、<b>KIWAMI極口座は対象外</b>です。迷ったらスタンダード口座を選べばOKです。※最新の適用条件は必ずXM公式サイトでご確認ください。</p>
+    </details>
+    <details>
+      <summary>いくら入金すればいいですか？</summary>
+      <p class="a">100%ボーナスは<b>USD500までの入金</b>に適用されます。50%ボーナスの上限USD4,000に届く入金額の目安はUSD8,000です。※必ず生活に影響のない余剰資金の範囲で行ってください。</p>
+    </details>
+    <details>
+      <summary>Narrowの3大特典は誰でも受け取れますか？</summary>
+      <p class="a">3大特典は<b>当ページのリンク経由（またはパートナーコード入力）で開設した口座</b>をお持ちの方が対象で、<b>無料</b>です。公式LINEに口座開設完了のスクショを送ってください。</p>
+    </details>
+    <details>
+      <summary>キャンペーンはいつまでですか？</summary>
+      <p class="a"><b>2026年10月5日(月) 15:30 〜 10月30日(金)</b>です。期間を過ぎた入金は対象外となるため、お早めにどうぞ。</p>
+    </details>
+
+    <a href="#" class="cta-btn js-xm" style="margin-top:24px;">期間内にボーナスを受け取る<small>▶ 10/30(金)までの期間限定</small></a>
+  </section>
+
+  <!-- ============ リスク・免責 ============ -->
+  <footer class="risk">
+    <div class="pr-note"><b>【PR表記】</b>本ページはXMTradingのパートナー（アフィリエイト）プログラムによる広告を含みます。当ページのリンクから口座開設・取引が行われた場合、運営者に報酬が支払われることがあります。</div>
+    <h3>リスクに関する重要事項</h3>
+    <ul>
+      <li>外国為替証拠金取引（FX）はレバレッジの効果により、預託した証拠金を上回る損失が発生するおそれがある、リスクの高い金融商品です。</li>
+      <li>取引は必ずご自身の判断と責任において、生活に影響のない余剰資金の範囲で行ってください。ボーナスの取引量条件を満たすことを目的とした過度な取引はおすすめしません。</li>
+      <li>XMTrading（Tradexfin Limited等）は海外の金融ライセンスに基づき運営される業者であり、日本の金融庁に登録された業者ではありません。利用の判断はご自身の責任で行ってください。</li>
+      <li>本ページの秋の特別ボーナスは、Narrow Focus経由（当ページのリンクまたはパートナーコード入力）で開設したXM口座を対象とした条件です。他経由で開設した口座は対象外です。</li>
+      <li>本ページに記載のボーナス内容・期間・適用条件は変更・中止される場合があります。最新かつ正確な条件は必ずXMTrading公式サイト・会員ページにてご確認ください。</li>
+      <li>特典（Narrow MEMBER・RSIロジックAIエントリー配信・リアルタイムトレード配信ほか各サービス）は投資助言を目的とするものではなく、利益を保証するものではありません。エントリー配信は情報提供であり、売買の最終判断はご自身で行ってください。</li>
+    </ul>
+    <p>© 2026 Narrow Focus. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ============ 追従CTA ============ -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="#" class="cta-btn js-xm">🍂 秋の特別ボーナスを受け取る（〜10/30）</a>
+  </div>
+
+</div>
+
+<script>
+/* ---- リンク・コードの差し込み ---- */
+document.querySelectorAll('.js-xm').forEach(a=>{a.href=CONFIG.XM_LINK;a.target="_blank";a.rel="noopener";});
+document.querySelectorAll('.js-line').forEach(a=>{a.href=CONFIG.LINE_URL;a.target="_blank";a.rel="noopener";});
+document.querySelectorAll('.js-code').forEach(e=>{e.textContent=CONFIG.PARTNER_CODE;});
+document.querySelectorAll('.js-code-inline').forEach(e=>{e.textContent=CONFIG.PARTNER_CODE;});
+
+/* ---- コードコピー ---- */
+document.getElementById('copyBtn').addEventListener('click',function(){
+  const btn=this;
+  const done=()=>{btn.textContent="✔ コピーしました";setTimeout(()=>btn.textContent="コードをコピー",1800);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(CONFIG.PARTNER_CODE).then(done).catch(()=>fallback());
+  }else{fallback();}
+  function fallback(){
+    const t=document.createElement('textarea');t.value=CONFIG.PARTNER_CODE;document.body.appendChild(t);
+    t.select();try{document.execCommand('copy');done();}catch(e){}document.body.removeChild(t);
+  }
+});
+
+/* ---- タブ切り替え ---- */
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.steps').forEach(s=>s.classList.remove('show'));
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('show');
+  });
+});
+
+/* ---- カウントダウン（日本時間） ----
+   開始=XM告知の「10月5日15時30分」。終了=告知は「30日」までのため10/30 23:59:59で設定（終了時刻が判明したらここを直す） */
+const START=new Date("2026-10-05T15:30:00+09:00").getTime();
+const END=new Date("2026-10-30T23:59:59+09:00").getTime();
+function tick(){
+  const now=Date.now();
+  const label=document.getElementById('cdLabel');
+  let target;
+  if(now<START){label.textContent="キャンペーン開始まで";target=START;}
+  else if(now<=END){label.textContent="キャンペーン終了まで";target=END;}
+  else{
+    label.textContent="本キャンペーンは終了しました";
+    ['cdD','cdH','cdM','cdS'].forEach(id=>document.getElementById(id).textContent="0");
+    return;
+  }
+  const d=target-now;
+  document.getElementById('cdD').textContent=Math.floor(d/86400000);
+  document.getElementById('cdH').textContent=String(Math.floor(d%86400000/3600000)).padStart(2,'0');
+  document.getElementById('cdM').textContent=String(Math.floor(d%3600000/60000)).padStart(2,'0');
+  document.getElementById('cdS').textContent=String(Math.floor(d%60000/1000)).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
+
+/* ---- 追従CTA ---- */
+const sticky=document.getElementById('stickyCta');
+const hero=document.querySelector('.hero');
+window.addEventListener('scroll',()=>{
+  const past=window.scrollY>hero.offsetHeight;
+  sticky.classList.toggle('show',past);
+},{passive:true});
+</script>
+</body>
+</html>
