@@ -12,7 +12,7 @@
    ============================================================ */
 const CONFIG = {
   XM_LINK:      "https://clicks.affstrack.com/c?c=1265139&l=ja&p=1", // XM開設リンク（本番・2026-07-20ユーザー支給）
-  PARTNER_CODE: "GRYTP",                         // パートナーコード（本番・2026-07-20ユーザー支給）
+  PARTNER_CODE: "W6VGW",                         // パートナーコード（秋版・2026-10-05ユーザー支給）
   LINE_URL:     "https://lin.ee/Qqk01yC",        // Narrow公式LINE（確認済み）
 };
 /* ============================================================ */
@@ -354,7 +354,7 @@ section{padding:46px 22px;}
         <div class="hn"><div class="t">取引量達成で</div><div class="v">50<small>%</small></div><div class="s">最大USD4,000</div></div>
         <div class="hn max"><div class="t">常設ボーナス込み</div><div class="v"><small>最大</small>$15,000</div><div class="s">利用可能</div></div>
       </div>
-      <div class="period">⏳ 2026年10月5日(月)15:30 〜 10月30日(金)</div>
+      <div class="period">⏳ 2026年10月5日(月) 15:30 〜<br>10月30日(金) 23:59まで</div>
       <div class="target-pills">
         <span class="pill hot">🔰 新規の方 対象</span>
         <span class="pill hot">✅ Narrow経由の口座はそのままOK</span>
@@ -375,7 +375,7 @@ section{padding:46px 22px;}
       <div class="cd-cell"><span class="num" id="cdM">--</span><span class="u">分</span></div>
       <div class="cd-cell"><span class="num" id="cdS">--</span><span class="u">秒</span></div>
     </div>
-    <p class="cd-note">開催期間：2026/10/5(月) 15:30 〜 10/30(金)（日本時間）</p>
+    <p class="cd-note">開催期間：2026/10/5(月) 15:30 〜 10/30(金) 23:59（日本時間）</p>
   </div>
 
   <!-- ============ 悩み→解決 ============ -->
@@ -663,10 +663,10 @@ section{padding:46px 22px;}
     </details>
     <details>
       <summary>キャンペーンはいつまでですか？</summary>
-      <p class="a"><b>2026年10月5日(月) 15:30 〜 10月30日(金)</b>です。期間を過ぎた入金は対象外となるため、お早めにどうぞ。</p>
+      <p class="a"><b>2026年10月5日(月) 15:30 〜 10月30日(金) 23:59（日本時間）</b>です。期間を過ぎた入金は対象外となるため、お早めにどうぞ。</p>
     </details>
 
-    <a href="#" class="cta-btn js-xm" style="margin-top:24px;">期間内にボーナスを受け取る<small>▶ 10/30(金)までの期間限定</small></a>
+    <a href="#" class="cta-btn js-xm" style="margin-top:24px;">期間内にボーナスを受け取る<small>▶ 10/30(金) 23:59までの期間限定</small></a>
   </section>
 
   <!-- ============ リスク・免責 ============ -->
@@ -722,7 +722,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
 });
 
 /* ---- カウントダウン（日本時間） ----
-   開始=XM告知の「10月5日15時30分」。終了=告知は「30日」までのため10/30 23:59:59で設定（終了時刻が判明したらここを直す） */
+   開始=XM告知の「10月5日15時30分」。終了=10/30 23:59（2026-10-05ユーザー確定） */
 const START=new Date("2026-10-05T15:30:00+09:00").getTime();
 const END=new Date("2026-10-30T23:59:59+09:00").getTime();
 function tick(){
